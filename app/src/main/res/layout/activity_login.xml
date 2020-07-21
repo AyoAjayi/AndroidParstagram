@@ -1,36 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="16dp"
+    android:layout_gravity="center_vertical"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@android:color/black"
+    android:backgroundTint="#D12AE4"
     android:orientation="vertical"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:backgroundTint="#A23FA5"
+        app:srcCompat="@drawable/insta2" />
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:layout_weight="1"
+        android:background="#FAFAFA"
+        android:backgroundTint="#A23FA5"
         android:ems="10"
-        android:hint="@string/username" />
+        android:hint="@string/username"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF" />
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_weight="1"
+        android:background="@android:color/white"
+        android:backgroundTint="#A23FA5"
         android:ems="10"
-        android:hint="password"
-        android:inputType="textPassword" />
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_weight="1"
-        android:text="Login" />
+        android:background="@android:color/white"
+        android:text="Login/SIGN UP"
+        android:textColor="@android:color/black" />
 
 </LinearLayout>
